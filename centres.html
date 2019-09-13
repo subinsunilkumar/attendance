@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;border-radius:50px;text-align:center;}
+  #section2 {color: #fff; background-color: #673ab7;border-radius:50px;text-align:center;}
+  #section3 {color: #fff; background-color: #ff9800;border-radius:50px;text-align:center;}
+  #section41 {color: #fff; background-color: #00bcd4;border-radius:50px;text-align:center;}
+  #section42 {color: #fff; background-color: #009688;border-radius:50px;text-align:center;}
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+       <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEC<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section1">NEC-1</a></li>
+            <li><a href="#section1">NEC-2</a></li>                     
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">TTC<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section2">TTC-1</a></li>
+            <li><a href="#section2">TTC-2</a></li>                     
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">RNTC <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section3">RNTC-1</a></li>
+            <li><a href="#section3">RNTC-2</a></li>                     
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1"> 
+	<br>   
+        <h1>NEC</h1>
+        <p>Test Login</p>
+      </div>
+      <div id="section2">
+	<br>
+        <h1>TTC</h1>
+        <p>Test Login</p>
+      </div>        
+      <div id="section3"> 
+	<br>        
+        <h1>RNTC</h1>
+        <p>Test Login</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
