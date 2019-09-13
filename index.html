@@ -22,6 +22,26 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<script>
+
+var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "123" && password == "123"){
+
+window.location = "centres.html"; // Redirecting to other page.
+return false;
+}
+else{
+attempt --;// Decrementing by one.
+alert("Retype your NTTF ID and password");
+
+
+}
+}
+</script>
 </head>
 <body>
 	
@@ -71,26 +91,7 @@
 		</div>
 	</div>
 	
-	<script>
-
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-if ( username == "123" && password == "123"){
-
-window.location = "centres.html"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("Retype your NTTF ID and password");
-
-
-}
-}
-</script>
+	
 
 	
 <!--===============================================================================================-->	
