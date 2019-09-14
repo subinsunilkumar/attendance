@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script language="javascript">
-function validate ()
-{ 
-if(userid==123)
-window.open('centres.html');
-
+<script>
+function validate()
+{
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value; 	
+if(username==123)
+{	
+window.location="centres.html";
 }
-	</script>
+</script>
 	<title>NTTF Attendance</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +51,7 @@ window.open('centres.html');
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-						<input class="input100" type="text" name="userid" placeholder="Username" id="username">
+						<input class="input100" type="text" name="username" placeholder="Username" id="username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
@@ -57,7 +59,7 @@ window.open('centres.html');
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-						<input class="input100" type="password" name="pswrd" placeholder="Password" id="password">
+						<input class="input100" type="password" name="password" placeholder="Password" id="password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>
